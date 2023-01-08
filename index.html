@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Menu || Navigation</title>
+  </head>
+  <body>
+    <div class="container-main">
+      <div class="circle-2" onclick="myfunc()" id="circle-2">
+        <div class="line-1-1-1" id="line-1"></div>
+        <div class="line-2-1-1" id="line-2"></div>
+      </div>
+      <div class="container">
+        <div class="img" id="toggle">
+          <div class="circle" onclick="myfunc()" id="circle">
+            <div class="line-1" id="line-1"></div>
+            <div class="line-2" id="line-2"></div>
+          </div>
+        </div>
+        <div class="list-container" id="toggle-2">
+          <ul class="list">
+            <li>Home</li>
+            <li>Service</li>
+            <li>Contact</li>
+            <li>Product</li>
+            <li>Headphone</li>
+            <li>Laptop</li>
+            <li>Spring</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const img = document.getElementById("toggle");
+      const list = document.getElementById("toggle-2");
+      const line1 = document.getElementById("line-1");
+      const line2 = document.getElementById("line-2");
+      const circle = document.getElementById("circle");
+      const circle2 = document.getElementById("circle-2");
+      function myfunc() {
+        img.classList.toggle("img-toggle");
+        list.classList.toggle("list-container-2");
+        circle.classList.toggle("circle-toggle");
+        circle2.classList.toggle("circle-2-toggle");
+        console.log("working");
+      }
+    </script>
+  </body>
+</html>
